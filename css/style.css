@@ -255,8 +255,8 @@ h1 {
   outline: 1px solid #000;
 }
 .reqi > input:checked + span {
-  top: 33%;
-  left: 50%;
+  left: 11%;
+  top: 67%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #000;
@@ -420,7 +420,7 @@ input[type="date"] {
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
-.human {
+.manw {
   display: flex;
   flex-direction: column;
   row-gap: 9px;
@@ -494,7 +494,7 @@ input[type="date"] {
   font-family: "Roboto";
   padding-bottom: 34px;
 }
-.flex_ {
+.flexcent {
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -549,12 +549,12 @@ input[type="date"] {
   width: 324px;
 }
 .table-input:focus,
-.table-select:focus {
+.tablevib:focus {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
   border: 1px solid #3e6aff;
   appearance: none;
 }
-.table-select {
+.tablevib {
   font-size: 14px;
   color: #1f222c;
   font-weight: 400;
@@ -593,7 +593,7 @@ input[type="date"] {
 }
 .tbody-flex > tr:first-child,
 .tbody-flex > tr:last-child {
-  display: flex;
+  vertical-align: top;
   flex-direction: column;
   row-gap: 14px;
 }
