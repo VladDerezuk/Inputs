@@ -126,6 +126,7 @@ h1 {
   filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
   background-color: #07be51;
   border: none;
+  cursor: pointer;
 }
 .six {
   position: absolute;
@@ -424,7 +425,7 @@ input[type="date"] {
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
-.manw {
+.genders {
   display: flex;
   flex-direction: column;
   row-gap: 9px;
@@ -441,6 +442,13 @@ input[type="date"] {
 .firstradiogender:checked {
   background-image: url(/img/man-color.png.png);
   z-index: 2;
+}
+.gend:hover{
+  font-size: 16px;
+  color: #3e6aff;
+  font-weight: 700;
+  font-family: "Roboto";
+  transition: all 1s ease;
 }
 .secondradiogender {
   width: 70px;
@@ -498,7 +506,11 @@ input[type="date"] {
   font-family: "Roboto";
   padding-bottom: 34px;
 }
-.flexcent {
+.man:focus,
+.women:focus{
+  color: #3e6aff; 
+}
+.flexcenter {
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -552,6 +564,10 @@ input[type="date"] {
   padding: 15px 0 13px 15px;
   width: 324px;
 }
+
+.krain:focus,
+.gmail:focus,
+.fioform:focus,
 .table-input:focus,
 .tablevib:focus {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
@@ -579,13 +595,19 @@ input[type="date"] {
   display: flex;
   column-gap: 9px;
 }
+.pshka{
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+}
 .file {
-  appearance: none;
-  width: 100%;
+  border: none;
+  width: 170px;
   height: 41px;
   border-radius: 3px;
   background-color: #3e6aff;
-  border: none;
 }
 .table-textarea {
   padding: 15px 0 13px 15px;
@@ -612,6 +634,7 @@ input[type="date"] {
   row-gap: 19px;
 }
 .submit-form {
+  align-itemr
   padding: 10px;
   border-radius: 3px;
   background-color: #12d661;
