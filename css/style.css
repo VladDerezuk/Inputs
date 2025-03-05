@@ -79,6 +79,19 @@ h1 {
 }
 .first > p,
 .six > p {
+  
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding-bottom: 28px;
+}
+.six > p {
+  top: 135px;
+  position: fixed;
+  z-index: 2;
   font-size: 20px;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -129,6 +142,7 @@ h1 {
   cursor: pointer;
 }
 .six {
+  
   position: absolute;
   top: 176px;
   right: 0;
@@ -316,6 +330,10 @@ hr:first-child {
   display: flex;
   column-gap: 62px;
 }
+.checkbox > p,
+.radio > p{ 
+  margin-bottom: 6px;
+}
 .radio > p:first-child > label > input,
 .radio > p:nth-child(2) > label > input,
 .radio-table > input {
@@ -376,6 +394,28 @@ hr:first-child {
   color: #b3b3b3;
   font-weight: 400;
   font-family: "Roboto";
+}
+.checkbox > p:last-child > label > span > input {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  gap: 20px;
+}
+.checkbox > p:last-child > label {
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.check > span{
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  gap: 20px;
 }
 .style-checkbox {
   font-size: 14px;
@@ -546,6 +586,9 @@ input[type="date"] {
   font-family: "Roboto";
   padding-bottom: 25px;
 }
+.vids{
+  column-gap: 100px;
+}
 .tdtex {
   width: 72px;
   vertical-align: top;
@@ -633,8 +676,7 @@ input[type="date"] {
   flex-direction: column;
   row-gap: 19px;
 }
-.submit-form {
-  align-itemr
+.submit-form {  
   padding: 10px;
   border-radius: 3px;
   background-color: #12d661;
