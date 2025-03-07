@@ -299,7 +299,7 @@ h1 {
 }
 .reqi > input:checked + span {
   left: 11%;
-  top: 65%;
+  top: 68%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #244dd7;
