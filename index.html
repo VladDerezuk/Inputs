@@ -46,6 +46,25 @@
       </div>
       <div class="six">
       <p>06. фіксована форма</p>
+      <a href="#" class="open-popup">явись на свет!!</a>
+      <div class="popup">
+        <p>
+          <a href="#" class="cancel">
+            <svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+            >
+              <path
+                fill-rule="evenodd"
+                class="a"
+                d="m9.9 8.5l-1.4 1.4-3.5-3.5-3.5 3.5-1.4-1.4 3.5-3.5-3.5-3.5 1.4-1.4 3.5 3.5 3.5-3.5 1.4 1.4-3.5 3.5z"
+              />
+            </svg>
+          </a>
+        </p>
         <div class="bacground">
           <form method="post" class="formsix">
             <p>
@@ -136,38 +155,38 @@
                 </label>
               </p>
             </div>
-       <div class="sec">
-           <div class="flex-between style-status">
-             <p class="status">Статус</p>
-      <label class="flexn">
-            <span class="checd">
-              <input type="checkbox">
-                <span></span>
-              </span>
-               Новинки
-            </label>
-          <label class="flexn">
-               <span class="checd">
-                 <input type="checkbox">
-                 <span></span>
-               </span>
-              Акційні товари
-             </label>
+        <div class="sec">
+            <div class="flex-between style-status">
+              <p class="status">Статус</p>
+        <label class="flexn">
+              <span class="checd">
+                <input type="checkbox">
+                  <span></span>
+                </span>
+                Новинки
+              </label>
             <label class="flexn">
-               <span class="checd">
-               <input type="checkbox">
-                <span></span>
-           </span>
-             Розпродаж
-        </label>
-        </div>
-       <div class="antistyle-status">
-          <p class="status">Дата</p>
-           <label>
-          <input type="date" value="2018-03-17">
-            </label>
-         </div>
-            </div>
+                <span class="checd">
+                  <input type="checkbox">
+                  <span></span>
+                </span>
+                Акційні товари
+              </label>
+              <label class="flexn">
+                <span class="checd">
+                <input type="checkbox">
+                  <span></span>
+            </span>
+              Розпродаж
+          </label>
+          </div>
+        <div class="antistyle-status">
+            <p class="status">Дата</p>
+            <label>
+            <input type="date" value="2018-03-17">
+              </label>
+          </div>
+              </div>
           </form>
         </div>
       </div>
@@ -273,8 +292,10 @@
                 </tr>
               </tr>
             </tbody>
+              <tr>
+              <td><label><input type="submit" value="Зареєструватися" class="submit-form"></label></td>
+              </tr>
           </table>
-          <label><input type="submit" value="Зареєструватися" class="submit-form"></label>
         </form>
       </div>
       <hr class="wrapper hrka">
@@ -318,12 +339,14 @@
                 </tr>
                 <tr>
                   <td>
-                  <div class="check">
-                    <label>
-                        <input type="checkbox">Я погоджуюсь з правилами оплати та доставки товару
-                        <span></span>
-                    </label>
-                  </div>
+                    <div class="ch">
+                      <label>
+                        <span class="spanen">
+                          <input class="ch" type="checkbox">Я погоджуюсь з правилами оплати та доставки товару
+                          <span></span>
+                        </span>
+                      </label>
+                      </div>
                     </td>
                 </tr>
               </tbody>
@@ -341,5 +364,20 @@
         </div>
       </div>
     </div>
+    <script>
+      const openPopup = document.querySelector(".open-popup"),
+        cancel = document.querySelector(".cancel"),
+        popup = document.querySelector(".popup");
+
+      openPopup.addEventListener("click", function (e) {
+        e.preventDefault();
+        popup.style.display = "block";
+      });
+
+      cancel.addEventListener("click", function (e) {
+        e.preventDefault();
+        popup.style.display = "none";
+      });
+    </script>
   </body>
 </html>

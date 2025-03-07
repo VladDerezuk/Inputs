@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Bold.woff") format("woff"),
+    url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Regular.woff") format("woff"),
+    url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -162,7 +180,7 @@ h1 {
   padding: 12px 11px 0 0;
 }
 .formsix {
-  padding: 5px 25px;
+  padding: 10px 25px;
 }
 .formsix ~ p > a {
   display: block;
@@ -175,6 +193,9 @@ h1 {
 }
 .formsix ~ p {
   position: relative;
+}
+.cancel{
+  fill: #b3b3b3;
 }
 .formsix > p > a {
   display: block;
@@ -245,17 +266,20 @@ h1 {
   align-items: center;
   column-gap: 20px;
 }
-.check
+.spanen,
+.check,
 .justspan,
 .checd {
   position: relative;
 }
+.spanen span,
 .check span,
 .reqi span,
 .justspan span,
 .checd span {
   position: absolute;
 }
+.spanen > input,
 .check > input,
 .reqi > input,
 .justspan  > input,
@@ -266,6 +290,7 @@ h1 {
   background-color: #fff;
   border: 1px solid #ccc;
 }
+.spanen > input:checked,
 .check > input:checked,
 .reqi > input:checked,
 .justspan  > input:checked,
@@ -274,7 +299,7 @@ h1 {
 }
 .reqi > input:checked + span {
   left: 11%;
-  top: 67%;
+  top: 65%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #244dd7;
@@ -365,15 +390,24 @@ hr:first-child {
 .justspan  {
   position: relative;
 }
-.justspan  span {
+.justspan span {
   position: absolute;
 }
-.justspan  > input:checked {
+.justspan  input:checked {
   outline: 1px solid #3e6aff;
 }
-.justspan  > input:checked + span {
+.justspan  input:checked + span {
   top: 20%;
   left: 41%;
+  width: 5px;
+  height: 7px;
+  border-top: 2px solid #244dd7;
+  border-left: 2px solid #244dd7;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.ch input:checked + span{
+  top: 20%;
+  left: 2%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #244dd7;
@@ -393,6 +427,13 @@ hr:first-child {
   color: #b3b3b3;
   font-weight: 400;
   font-family: "Roboto";
+}
+.sec{
+  width: 473px;
+  height: 114px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
 }
 .checkbox > p:last-child > label > span > input {
   width: 16px;
@@ -472,14 +513,14 @@ input[type="date"] {
 .firstradiogender {
   width: 70px;
   height: 70px;
-  background-image: url(/img/man.png.png);
+  background-image: url(../img/man.png.png);
   border-radius: 50%;
   z-index: 2;
   transition: all .5s ease;
   cursor: pointer;
 }
 .firstradiogender:checked {
-  background-image: url(/img/man-color.png.png);
+  background-image: url(../img/man-color.png.png);
   z-index: 2;
   color: #3e6aff;
 
@@ -493,14 +534,14 @@ input[type="date"] {
 .secondradiogender {
   width: 70px;
   height: 70px;
-  background-image: url(/img/women.png.png);
+  background-image: url(../img/women.png.png);
   border-radius: 50%;
   z-index: 1;
   transition: all .5s ease;
   cursor: pointer;
 }
 .secondradiogender:checked {
-  background-image: url(/img/women-color.png.png);
+  background-image: url(../img/women-color.png.png);
   z-index: 1;
 }
 .parenta {
@@ -740,7 +781,7 @@ input[type="date"] {
 }
 .krain{
   padding: 10px;
-  width: 220px;
+  width: 100%;
   height: 41px;
   border-radius: 3px;
   background-color: #ffffff;
@@ -756,7 +797,7 @@ input[type="date"] {
   margin: 19px;
 }
 .butback{
-  width: 180px;
+  width: 100%;
   height: 43px;
   border-radius: 3px;
   background-color: #ffffff;
@@ -778,7 +819,7 @@ input[type="date"] {
   background-color: #85868d;
 }
 .kupi{
-  width: 180px;
+  width: 100%;
   height: 43px;
   border-radius: 3px;
   filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
