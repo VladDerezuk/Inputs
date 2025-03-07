@@ -142,6 +142,7 @@ h1 {
   appearance: none;
 }
 .formfirst > p > label > textarea {
+  width: 100%;
   padding: 16px 0 16px 16px;
   border-radius: 3px;
   border: 1px solid #cccccc;
@@ -229,10 +230,8 @@ h1 {
   row-gap: 9px;
 }
 .texteria{
-  padding: 10px;
-  width: 100%;
-  resize: vertical;
-  max-height: 130px;
+  width: 330px;
+  height: 130px;
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -356,7 +355,7 @@ hr:first-child {
 }
 .checkbox > p,
 .radio > p{ 
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .radio > p:first-child > label > input,
 .radio > p:nth-child(2) > label > input,
@@ -694,7 +693,7 @@ input[type="date"] {
 }
 .table-textarea {
   padding: 15px 0 13px 15px;
-  width: 324px;
+  width: 100%;
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
